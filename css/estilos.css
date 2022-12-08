@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header nav div div {
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header nav div div ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out; }
+    header nav div div ul li a {
+      text-decoration: none;
+      color: white;
+      font-family: fantasy, "sans-serif";
+      font-size: 1.2rem; }
+      header nav div div ul li a :hover {
+        width: 100%; }
+  header nav div div img .logo {
+    width: 170px;
+    cursor: pointer; }
+
+.hero {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #9c9c9a;
+  color: #ffd700;
+  font-style: oblique;
+  font-size: 100px;
+  text-align: center; }

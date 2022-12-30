@@ -61,7 +61,7 @@ body{
 
 /*---Main---*/
 
-.hero{
+.hero2{
     height: calc(100vh - 250px);
     display: flex;
     flex-direction: column;

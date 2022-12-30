@@ -1,0 +1,52 @@
+/*----Variables---*/
+
+/*Paleta de colores*/
+
+$color-titulos: white;
+$color-G: rgb(204, 8, 8);
+$color-parrafos: lightblue;
+
+/*--Lista--*/
+
+$font-size:
+
+10px,
+20px,
+30px,
+48px,
+90px;
+
+.hero{
+    font-size: nth($font-size, 5);
+}
+
+//!Extends
+// % = placeholder
+
+%flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dueño{
+    @extend %flex;
+}
+
+.encargado{
+    @extend %flex;
+}
+
+//!Mixins
+
+
+    @mixin flex ($flex, $justify, $align){
+        display: $flex;
+        justify-content: $justify;
+        align-items: $align;
+    }
+
+    .hero2{
+        @include flex(flex, center, center)
+    }
+    

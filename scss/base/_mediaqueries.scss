@@ -1,0 +1,129 @@
+/*---Index pantallas---*/
+
+@media screen and (max-width: 1050px){
+    body{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    body{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+        width: 40%;
+    }
+}
+
+/*---Trabaja con nosotros pantallas---*/
+
+@media  (min-width: 700px){
+    body{
+       padding: 0 4rem;
+    }
+ .contact-wrapper {
+       display: grid;
+       grid-template-columns: 2fr;
+ }
+ }
+ 
+ @media  (min-width: 480px){
+    body{
+       padding: 0 4rem;
+    }
+ .contact-wrapper {
+       display: grid;
+       grid-template-columns: 1fr;
+ }
+ }
+
+ /*---Contacto---*/
+
+ /*---pantallas grande--*/
+
+@media (min-width: 700px) {
+    body{
+        padding: 0 4rem;
+    }
+
+    .contact-wrapper2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper2 > * {
+        padding: 2em;
+    }
+
+    .contact-info2 h4,
+    .contact-info2 ul,
+    .contact-info2 p {
+            padding: 1em;
+            text-align: left;
+    }
+}
+/*--pantallas chicas*/
+@media (min-width: 480px) {
+    body{
+        padding: 0 4rem;
+    }
+
+    .contact-wrapper2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-wrapper2 > * {
+        padding: 1em;
+    }
+
+    .contact-info2 h4,
+    .contact-info2 ul,
+    .contact-info2 p {
+            padding: 1em;
+            text-align: left;
+    }
+}
+
+/*---Acerca de pantallas---*/
+
+@media screen and (max-width: 1050px){
+    .hero{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .hero{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .hero{
+        width: 40%;
+    }
+}
+
+/*---Menu Pantallas---*/
+
+@media (max-width:1024px){
+    .column-4{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:768px){
+    .column-4{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:480px){
+    .column-4{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+

@@ -1,15 +1,17 @@
-*{    
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
 }
+
 body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 90%;
-    height: 100vh;
     background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url("../img/comidafondo.png");
-    
 }
+
+
 
 

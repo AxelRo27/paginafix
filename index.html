@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!----Bootstrap--->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+         <!--CDN Bootstrap-->
+         <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
         <!----AnimacionCss--->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!---Favicon-->
@@ -30,24 +32,27 @@
         <!---IMAGEN-->
         <meta property="og:image" content="https://goldenrestaurante.netlify.app/img/gourmet2.png">
         
+
 </head>
 <body>
-<header>
-        <nav>
-        <div class="container">
-                <div class="navbar">
-                        <a href="index.html"><img src="./img/gourmet2.png"  class="logo" alt="logoresto"></a>
-                    <ul>
-                        <li><a href="contacto.html">Contacto </a></li>
-                        <li><a href="trabajaconnosotros.html">Trabaja con nosotros </a></li>
-                        <li><a href="menu.html"> Menú </a></li>
-                        <li><a href="acerdade.html">Acerca  de </a></li>
-                    </ul>
-                
-                </div>
-        </div>
-</nav>
-</header>
+        <header>
+                <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                                <i class="bi bi-plus-square"></i>
+                        </label>
+                        <a href="index.html" class="enlace">
+                                <img src="./img/gourmet2.png" alt="logoresto" class="logo" >
+                        </a>
+                        <ul>
+                                <li><a class="active" href="index.html">Inicio </a></li>
+                                <li><a href="contacto.html">Contacto </a></li>
+                                <li><a href="trabajaconnosotros.html">Trabaja con nosotros </a></li>
+                                <li><a href="menu.html"> Menú </a></li>
+                                <li><a href="acerdade.html">Acerca  de </a></li>
+                            </ul>
+                </nav>
+                </header>
 <main>
 <div class="animate__animated animate__fadeInDown">
         <h1 class="hero">Golden Restaurant</h1>
@@ -56,14 +61,27 @@
         <h2>Espero que les guste el restaurant!</h2>
 </section>   
 
-<section class="img">
-        <div class="imagenes">
-        <img src="./img/restoofondo.png" class="img1" alt="fondo" >
-        <img src="./img/terraza.png" class="img2" alt="terraza" >
-        <img src="./img/otratoma.png" class="img3" alt="otra foto" >
-</div>
-</section>
-</main> 
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/fondo.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/otratoma.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/terraza.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 <section class="h4">
         <p class="parrafo2">La mejor red social es una mesa llena de buena comida y rodeada de personas que quieres.</p>
@@ -81,7 +99,7 @@
                 <img src="./img/milas.png" alt="milas" class="milas">
                         
                         <p>Decían: ¿Qué nos pusieron acá adentro? Recién cuando uno abría y cortaba, podía ver. Esa era la verdadera milanesa. 'La verdad de la milanesa' es cuando recién la abrimos”.</p>
-                        <a href="menu.html"><button>Pedir ya!</button></a>
+                        <a href="menu.html"><button class="button">Pedir ya!</button></a>
                 </div>
                 <div class="carta">
                         <h3>HAMBURGUESAS</h3>
@@ -89,40 +107,54 @@
                         
                         <p>Una dieta equilibrada es una hamburguesa en ambas manos. No me impresionará la tecnología hasta que pueda descargar La Hamburguesa.
                         </p>
-                        <a href="menu.html"><button>Pedir ya!</button></a>
+                        <a href="menu.html"><button class="button">Pedir ya!</button></a>
                 </div>
                 <div class="carta">
                         <h3>PIZZAS</h3>
                 <img src="./img/pizza.png" alt="pizza" class="pizza">
                 
                         <p>Las mejores pizzas las hacemos nosotros. Te invitamos a probarlas. </p>
-                        <a href="menu.html"><button>Pedir ya!</button></a>
+                        <a href="menu.html"><button class="button">Pedir ya!</button></a>
                 </div>
         </div>
 </div>
+
+</main> 
 <br>
 <footer>
-<section>
-        <h4 class="h4">Me encontras en:</h4>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26094697.692836065!2d-81.59969086848608!3d-37.024396452683774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1664961307325!5m2!1ses-419!2sar"width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
-                
-</section>
-
-        <p class="parrafo">Redes sociales! Espero que les guste!</p> 
-               
-        <a href="https://www.instagram.com/"target="_blank"><img src="./img/insta2.png" alt="-Cargando imágen-instagram"></a>
-        <a href="https://www.facebook.com/"target="_blank"><img src="./img/face2.png" alt="-Cargando imágen-facebook."></a>
-        <a href="https://www.youtube.com"target="_blank"><img src="./img/yt.png" alt="-Cargando imágen-youtube."></a>
-        <p>&copy; Golden Restaurant 2022</p>
-       
-
-        <form>
-<div class="top"> <br>
-        <a href="#Top">TOP</a>
-</div>
-</form>
+        
+        <section>
+                <h4 class="h4">Me encontras en:</h4>
+        
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26094697.692836065!2d-81.59969086848608!3d-37.024396452683774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1664961307325!5m2!1ses-419!2sar"width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                        
+        </section>
+                 
+        <section>
+        
+        <div class="box">
+        
+                <h2 class="parrafo">Redes sociales! Espero que les guste!</h2>
+                <div class="redes-sociales">
+                        <a href="https://www.instagram.com/" target="_blank" class="bi bi-instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="bi bi-facebook"></a>
+                        <a href="https://www.youtube.com" target="_blank" class="bi bi-youtube"></a>
+                        <a href="https://www.pedidosya.com.ar" target="_blank" class="bi bi-p-circle"></a>
+                </div>
+        </div>
+        <div class="copy">
+        <p>&copy; <b>Golden Restaurant 2023</b> | Todos los derechos reservados.</p>
+        </div>
+        
+                <form>
+        <div class="top"> 
+                <a href="#Top">TOP</a>
+        </div>
+        </form>
+        </section>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                <!--Links script-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

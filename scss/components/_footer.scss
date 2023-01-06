@@ -1,11 +1,40 @@
-footer{
-    
-    text-align: center;
-    margin: 0%;
-    padding: 0%;
-    .top{
+.h4{
+    padding: 10px;
+}
+.redes-sociales{
+        padding: 15px 10px;
         text-align: center;
     }
+.parrafo{
+        padding: 10px;
+        color: rgb(173, 180, 69);
+        font-size: 25px;
+        text-align: center;
+
+    }
+.redes-sociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #2d1dbb;
+    margin-right: 10px;
+    background-color: rgb(210, 221, 108);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.redes-sociales a:hover{
+    color: rgb(52, 165, 173);
+}
+.copy{
+    padding: 15px 10px;
+    text-align: center;
+}    
+.top{
+    color: rgb(235, 235, 235);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 @import "../base/variables";
-
